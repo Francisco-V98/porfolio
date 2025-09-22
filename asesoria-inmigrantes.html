@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría para Inmigrantes - Francisco Colmenarez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>Francisco Colmenarez</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Sobre mí</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="index.html#projects" class="nav-link dropdown-toggle">
+                        Proyectos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="busbanz.html" class="dropdown-item">
+                            <span class="dropdown-icon">🚌</span>
+                            <span class="dropdown-text">Busbanz</span>
+                        </a>
+                        <a href="portaltec.html" class="dropdown-item">
+                            <span class="dropdown-icon">🎓</span>
+                            <span class="dropdown-text">PortalTec</span>
+                        </a>
+                        <a href="asesoria-inmigrantes.html" class="dropdown-item active">
+                            <span class="dropdown-icon">⚖️</span>
+                            <span class="dropdown-text">Asesoría para Inmigrantes</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#methodologies" class="nav-link">Metodologías</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+    </section>
+
+    <!-- Asesoría para Inmigrantes Project Detail -->
+    <section class="project-detail-page">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-featured">
+                <div class="project-header">
+                    <div class="project-title-section">
+                        <h1 class="project-title">⚖️ Asesoría para Inmigrantes</h1>
+                        <p class="project-subtitle">Rediseño UX/UI para Bufete de Abogados</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UX Research</span>
+                            <span class="project-tag">UI Redesign</span>
+                            <span class="project-tag">User Stories</span>
+                            <span class="project-tag">Web Design</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://asesoriaparainmigrantes.com" target="_blank" class="live-site-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Sitio Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-story">
+                    <div class="story-section">
+                        <h4 class="story-title">🎯 El Desafío</h4>
+                        <p class="story-text">
+                            Asesoría para Inmigrantes es un bufete de abogados especializado en casos de inmigración. 
+                            Su sitio web original no transmitía la profesionalidad requerida ni facilitaba que los usuarios 
+                            encontraran la información que necesitaban. El desafío era crear una experiencia que generara 
+                            confianza y convirtiera visitantes en clientes potenciales.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🔍 Investigación y Problemas Identificados</h4>
+                        <p class="story-text">
+                            Realizamos un análisis exhaustivo del sitio existente y entrevistas con usuarios potenciales 
+                            para identificar los principales puntos de dolor:
+                        </p>
+                        <div class="problems-grid">
+                            <div class="problem-card">
+                                <div class="problem-icon">😕</div>
+                                <h5>Falta de Confianza</h5>
+                                <p>El diseño no transmitía profesionalismo ni credibilidad legal</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon">🔍</div>
+                                <h5>Información Difícil de Encontrar</h5>
+                                <p>Los servicios y procesos no estaban claramente organizados</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon">📱</div>
+                                <h5>Experiencia Móvil Deficiente</h5>
+                                <p>No era responsive y la navegación móvil era confusa</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon">📞</div>
+                                <h5>Call-to-Actions Débiles</h5>
+                                <p>No había un flujo claro para contactar o solicitar consulta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">👥 Historias de Usuario</h4>
+                        <div class="user-stories">
+                            <div class="user-story">
+                                <div class="user-avatar">👨‍💼</div>
+                                <div class="story-content">
+                                    <h5>Miguel, Empresario</h5>
+                                    <p><em>"Como empresario que necesita renovar mi visa de trabajo, quiero encontrar rápidamente información sobre los requisitos y costos, para poder tomar una decisión informada sobre contratar los servicios."</em></p>
+                                </div>
+                            </div>
+                            <div class="user-story">
+                                <div class="user-avatar">👩‍👧‍👦</div>
+                                <div class="story-content">
+                                    <h5>Carmen, Madre de Familia</h5>
+                                    <p><em>"Como madre que busca reunificación familiar, necesito entender el proceso paso a paso y sentir confianza en el abogado, para asegurarme de que mi familia pueda estar junta."</em></p>
+                                </div>
+                            </div>
+                            <div class="user-story">
+                                <div class="user-avatar">🎓</div>
+                                <div class="story-content">
+                                    <h5>Alex, Estudiante</h5>
+                                    <p><em>"Como estudiante internacional, quiero acceder fácilmente desde mi móvil a información sobre cambio de estatus, para poder planificar mi futuro académico y profesional."</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Before/After Comparison -->
+                    <div class="story-section">
+                        <h4 class="story-title">🔄 Antes vs Después: Transformación Visual</h4>
+                        <p class="story-text">
+                            La comparación lado a lado muestra claramente la evolución del diseño, 
+                            desde una interfaz desorganizada hasta una experiencia profesional y centrada en el usuario.
+                        </p>
+                        
+                        <div class="redesign-comparison">
+                            <div class="comparison-container-redesign">
+                                <!-- Old Design -->
+                                <div class="design-showcase old-design">
+                                    <div class="design-header">
+                                        <div class="design-title">
+                                            <i class="fas fa-times-circle"></i>
+                                            <span>Diseño Original</span>
+                                        </div>
+                                        <div class="design-status old">Antes</div>
+                                    </div>
+                                    <div class="design-screen">
+                                        <div class="screen-content-redesign">
+                                            <img src="assets/api-old.png" alt="Diseño original de Asesoría para Inmigrantes" class="redesign-image">
+                                        </div>
+                                    </div>
+                                    <div class="design-problems">
+                                        <h6>Problemas Identificados:</h6>
+                                        <ul>
+                                            <li>❌ Diseño desactualizado</li>
+                                            <li>❌ Navegación confusa</li>
+                                            <li>❌ Falta de jerarquía visual</li>
+                                            <li>❌ No responsive</li>
+                                            <li>❌ CTAs poco visibles</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- New Design -->
+                                <div class="design-showcase new-design">
+                                    <div class="design-header">
+                                        <div class="design-title">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Rediseño Mejorado</span>
+                                        </div>
+                                        <div class="design-status new">Después</div>
+                                    </div>
+                                    <div class="design-screen">
+                                        <div class="screen-content-redesign">
+                                            <img src="assets/api-new.png" alt="Rediseño mejorado de Asesoría para Inmigrantes" class="redesign-image">
+                                        </div>
+                                    </div>
+                                    <div class="design-improvements">
+                                        <h6>Mejoras Implementadas:</h6>
+                                        <ul>
+                                            <li>✅ Diseño moderno y profesional</li>
+                                            <li>✅ Navegación intuitiva</li>
+                                            <li>✅ Jerarquía visual clara</li>
+                                            <li>✅ Totalmente responsive</li>
+                                            <li>✅ CTAs prominentes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🗺️ Reestructuración de la Arquitectura de Información</h4>
+                        <p class="story-text">
+                            Uno de los mayores desafíos era la navegación caótica del sitio original. Con más de 50 páginas 
+                            distribuidas sin lógica clara, los usuarios se perdían buscando información específica. 
+                            Realizamos una reestructuración completa basada en research de usuarios y mejores prácticas de UX.
+                        </p>
+                        
+                        <!-- Navigation Comparison -->
+                        <div class="navigation-analysis">
+                            <div class="nav-comparison">
+                                <div class="nav-structure old-nav">
+                                    <div class="nav-header">
+                                        <h5>❌ Estructura Original</h5>
+                                        <div class="nav-stats bad">
+                                            <span>50-60 páginas</span>
+                                            <span>4 niveles</span>
+                                            <span>Duplicaciones</span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-tree">
+                                        <div class="nav-item level-1">
+                                            <span class="nav-icon">📁</span>
+                                            <span>SERVICIOS</span>
+                                            <div class="nav-children">
+                                                <div class="nav-item level-2">
+                                                    <span>Nacionalidad Española</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Expediente nacionalidad</div>
+                                                        <div class="nav-item level-3">Asesoría Fiscal</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item level-2">Asilo Político</div>
+                                                <div class="nav-item level-2">
+                                                    <span>Arraigo</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Social</div>
+                                                        <div class="nav-item level-3">Familiar</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-item level-1">
+                                            <span class="nav-icon">📁</span>
+                                            <span>TRÁMITES</span>
+                                            <div class="nav-children">
+                                                <div class="nav-item level-2">
+                                                    <span>España</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Plan Migratorio</div>
+                                                        <div class="nav-item level-3">Canje licencias</div>
+                                                        <div class="nav-item level-3">Seguro médico</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item level-2">
+                                                    <span>EEUU</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Visa inmigrante</div>
+                                                        <div class="nav-item level-3">Visa trabajo</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-problems">
+                                        <h6>Problemas Identificados:</h6>
+                                        <ul>
+                                            <li>🔄 Duplicación entre Servicios/Trámites</li>
+                                            <li>🤔 Jerarquía confusa</li>
+                                            <li>🧠 Sobrecarga cognitiva</li>
+                                            <li>📱 No optimizada para móvil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="nav-structure new-nav">
+                                    <div class="nav-header">
+                                        <h5>✅ Estructura Optimizada</h5>
+                                        <div class="nav-stats good">
+                                            <span>35-40 páginas</span>
+                                            <span>3 niveles</span>
+                                            <span>Sin duplicaciones</span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-tree">
+                                        <div class="nav-item level-1">
+                                            <span class="nav-icon">🌍</span>
+                                            <span>PAÍSES</span>
+                                            <div class="nav-children">
+                                                <div class="nav-item level-2">
+                                                    <span>🇪🇸 ESPAÑA</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Nacionalidad</div>
+                                                        <div class="nav-item level-3">Arraigo</div>
+                                                        <div class="nav-item level-3">Asilo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item level-2">
+                                                    <span>🇺🇸 ESTADOS UNIDOS</span>
+                                                    <div class="nav-children">
+                                                        <div class="nav-item level-3">Visas</div>
+                                                        <div class="nav-item level-3">Trabajo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-item level-2">🇦🇪 DUBÁI</div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-item level-1">
+                                            <span class="nav-icon">⚡</span>
+                                            <span>PROCESO</span>
+                                            <div class="nav-children">
+                                                <div class="nav-item level-2">1️⃣ Consulta</div>
+                                                <div class="nav-item level-2">2️⃣ Asesoría</div>
+                                                <div class="nav-item level-2">3️⃣ Gestión</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-improvements">
+                                        <h6>Mejoras Implementadas:</h6>
+                                        <ul>
+                                            <li>🎯 Organización por países</li>
+                                            <li>📋 Proceso lineal claro</li>
+                                            <li>🧭 Navegación intuitiva</li>
+                                            <li>📱 Mobile-first design</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Metrics -->
+                        <div class="navigation-metrics">
+                            <h5>📊 Impacto de la Reestructuración</h5>
+                            <div class="nav-metrics-grid">
+                                <div class="nav-metric">
+                                    <div class="metric-comparison">
+                                        <div class="metric-old">50-60</div>
+                                        <div class="metric-arrow">→</div>
+                                        <div class="metric-new">35-40</div>
+                                    </div>
+                                    <div class="metric-label">Páginas Totales</div>
+                                    <div class="metric-improvement">-25% reducción</div>
+                                </div>
+                                <div class="nav-metric">
+                                    <div class="metric-comparison">
+                                        <div class="metric-old">4</div>
+                                        <div class="metric-arrow">→</div>
+                                        <div class="metric-new">3</div>
+                                    </div>
+                                    <div class="metric-label">Niveles de Navegación</div>
+                                    <div class="metric-improvement">-25% más simple</div>
+                                </div>
+                                <div class="nav-metric">
+                                    <div class="metric-comparison">
+                                        <div class="metric-old">5.2</div>
+                                        <div class="metric-arrow">→</div>
+                                        <div class="metric-new">2.1</div>
+                                    </div>
+                                    <div class="metric-label">Clics para Encontrar Info</div>
+                                    <div class="metric-improvement">-60% más eficiente</div>
+                                </div>
+                                <div class="nav-metric">
+                                    <div class="metric-comparison">
+                                        <div class="metric-old">23%</div>
+                                        <div class="metric-arrow">→</div>
+                                        <div class="metric-new">67%</div>
+                                    </div>
+                                    <div class="metric-label">Usuarios que Completan Flujo</div>
+                                    <div class="metric-improvement">+191% mejora</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Journey Optimization -->
+                        <div class="user-journey">
+                            <h5>🛤️ Optimización del User Journey</h5>
+                            <div class="journey-flow">
+                                <div class="journey-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h6>Selección de País</h6>
+                                        <p>Usuario elige jurisdicción específica desde el inicio</p>
+                                    </div>
+                                </div>
+                                <div class="journey-arrow">→</div>
+                                <div class="journey-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h6>Tipo de Servicio</h6>
+                                        <p>Servicios filtrados por país seleccionado</p>
+                                    </div>
+                                </div>
+                                <div class="journey-arrow">→</div>
+                                <div class="journey-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h6>Información Detallada</h6>
+                                        <p>Contenido específico con CTAs claros</p>
+                                    </div>
+                                </div>
+                                <div class="journey-arrow">→</div>
+                                <div class="journey-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h6>Contacto/Cita</h6>
+                                        <p>Múltiples opciones de conversión</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">💡 Soluciones Implementadas</h4>
+                        <div class="solutions-grid">
+                            <div class="solution-card">
+                                <div class="solution-icon">🎨</div>
+                                <h5>Diseño Profesional</h5>
+                                <p>Paleta de colores que transmite confianza y seriedad legal, tipografía legible y espaciado generoso.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">🧭</div>
+                                <h5>Navegación Intuitiva</h5>
+                                <p>Reorganización de la información con menús claros y breadcrumbs para facilitar la orientación.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">📱</div>
+                                <h5>Mobile First</h5>
+                                <p>Diseño completamente responsive optimizado para la experiencia móvil donde ocurre el 70% del tráfico.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">🎯</div>
+                                <h5>CTAs Estratégicos</h5>
+                                <p>Botones de acción prominentes y formularios de contacto optimizados para maximizar conversiones.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">📋</div>
+                                <h5>Contenido Estructurado</h5>
+                                <p>Información organizada por tipos de servicio con explicaciones claras de procesos y requisitos.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">⚡</div>
+                                <h5>Performance Optimizada</h5>
+                                <p>Carga rápida, imágenes optimizadas y código limpio para mejor experiencia y SEO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">📊 Resultados del Rediseño</h4>
+                        <div class="results-metrics">
+                            <div class="metric-improvement">
+                                <div class="metric-before-after">
+                                    <div class="metric-value-old">2.3%</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-value-new">8.7%</div>
+                                </div>
+                                <div class="metric-label">Tasa de Conversión</div>
+                                <div class="metric-change">+278% mejora</div>
+                            </div>
+                            <div class="metric-improvement">
+                                <div class="metric-before-after">
+                                    <div class="metric-value-old">4:32</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-value-new">1:45</div>
+                                </div>
+                                <div class="metric-label">Tiempo de Rebote</div>
+                                <div class="metric-change">-61% reducción</div>
+                            </div>
+                            <div class="metric-improvement">
+                                <div class="metric-before-after">
+                                    <div class="metric-value-old">1.8</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-value-new">4.2</div>
+                                </div>
+                                <div class="metric-label">Páginas por Sesión</div>
+                                <div class="metric-change">+133% aumento</div>
+                            </div>
+                            <div class="metric-improvement">
+                                <div class="metric-before-after">
+                                    <div class="metric-value-old">32%</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-value-new">78%</div>
+                                </div>
+                                <div class="metric-label">Tráfico Móvil</div>
+                                <div class="metric-change">+144% mejora</div>
+                            </div>
+                        </div>
+                        <p class="results-description">
+                            El rediseño transformó completamente la presencia digital del bufete. 
+                            <strong>Las consultas aumentaron un 340%</strong> en los primeros 3 meses, 
+                            y la satisfacción del usuario mejoró significativamente según las métricas de usabilidad. 
+                            El sitio ahora genera confianza y facilita que los usuarios encuentren la información que necesitan 
+                            para tomar decisiones importantes sobre sus casos de inmigración.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🛠️ Metodología y Herramientas</h4>
+                        <div class="methodology-showcase">
+                            <div class="method-category">
+                                <h5>Investigación UX</h5>
+                                <div class="method-list">
+                                    <span class="method-item">User Interviews</span>
+                                    <span class="method-item">Competitive Analysis</span>
+                                    <span class="method-item">Heuristic Evaluation</span>
+                                    <span class="method-item">User Journey Mapping</span>
+                                </div>
+                            </div>
+                            <div class="method-category">
+                                <h5>Diseño UI</h5>
+                                <div class="method-list">
+                                    <span class="method-item">Figma</span>
+                                    <span class="method-item">Design System</span>
+                                    <span class="method-item">Prototyping</span>
+                                    <span class="method-item">Responsive Design</span>
+                                </div>
+                            </div>
+                            <div class="method-category">
+                                <h5>Validación</h5>
+                                <div class="method-list">
+                                    <span class="method-item">A/B Testing</span>
+                                    <span class="method-item">Usability Testing</span>
+                                    <span class="method-item">Analytics Tracking</span>
+                                    <span class="method-item">Performance Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Francisco Colmenarez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busbanz - Francisco Colmenarez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>Francisco Colmenarez</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Sobre mí</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="index.html#projects" class="nav-link dropdown-toggle">
+                        Proyectos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="busbanz.html" class="dropdown-item active">
+                            <span class="dropdown-icon">🚌</span>
+                            <span class="dropdown-text">Busbanz</span>
+                        </a>
+                        <a href="portaltec.html" class="dropdown-item">
+                            <span class="dropdown-icon">🎓</span>
+                            <span class="dropdown-text">PortalTec</span>
+                        </a>
+                        <a href="asesoria-inmigrantes.html" class="dropdown-item">
+                            <span class="dropdown-icon">⚖️</span>
+                            <span class="dropdown-text">Asesoría para Inmigrantes</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#methodologies" class="nav-link">Metodologías</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+    </section>
+
+    <!-- Busbanz Project Detail -->
+    <section class="project-detail-page">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-featured">
+                <div class="project-header">
+                    <div class="project-title-section">
+                        <h1 class="project-title">🚌 Busbanz</h1>
+                        <p class="project-subtitle">Plataforma de Transporte Estudiantil</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Product Design</span>
+                            <span class="project-tag">UX Research</span>
+                            <span class="project-tag">Design System</span>
+                            <span class="project-tag">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-story">
+                    <div class="story-section">
+                        <h4 class="story-title">🎯 El Problema</h4>
+                        <p class="story-text">
+                            Los padres de familia vivían con constante preocupación: <em>"¿Llegó mi hijo al colegio?"</em>, 
+                            <em>"¿Quién está manejando el bus?"</em>, <em>"¿Por qué se retrasa tanto?"</em>. 
+                            Mientras tanto, los conductores lidiaban con procesos manuales caóticos: listas en papel, 
+                            rutas desorganizadas y falta de comunicación con los representantes.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🔍 La Investigación</h4>
+                        <p class="story-text">
+                            Realizamos entrevistas profundas con <strong>representantes, conductores, monitores y instituciones educativas</strong>. 
+                            Descubrimos patrones claros: el 89% de los padres querían visibilidad en tiempo real, 
+                            mientras que el 94% de los conductores necesitaban automatizar sus procesos diarios.
+                        </p>
+                        <div class="research-highlights">
+                            <div class="research-item">
+                                <i class="fas fa-users"></i>
+                                <span>Entrevistas con usuarios</span>
+                            </div>
+                            <div class="research-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Análisis de competencia</span>
+                            </div>
+                            <div class="research-item">
+                                <i class="fas fa-flask"></i>
+                                <span>A/B Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design System Architecture -->
+                    <div class="story-section">
+                        <h4 class="story-title">🏗️ Arquitectura del Design System</h4>
+                        <p class="story-text">
+                            Desarrollé una arquitectura de diseño escalable y automatizada que garantiza consistencia y eficiencia en todo el proceso de desarrollo. Mi metodología de organización en Figma asegura un flujo de trabajo profesional y mantenible.
+                        </p>
+                        <div class="design-architecture">
+                            <div class="architecture-flow">
+                                <div class="arch-step">
+                                    <div class="arch-icon">🧩</div>
+                                    <h6>Componentes</h6>
+                                    <p>Elementos base reutilizables: botones, inputs, cards, etc. Con variables de color, tipografía y espaciado.</p>
+                                </div>
+                                <div class="arch-arrow">→</div>
+                                <div class="arch-step">
+                                    <div class="arch-icon">📱</div>
+                                    <h6>Screens</h6>
+                                    <p>Pantallas completas construidas con componentes. Organizadas por flujos de usuario y funcionalidades.</p>
+                                </div>
+                                <div class="arch-arrow">→</div>
+                                <div class="arch-step">
+                                    <div class="arch-icon">🎮</div>
+                                    <h6>Demos</h6>
+                                    <p>Prototipos interactivos que conectan las screens. Simulan la experiencia real de cada tipo de usuario.</p>
+                                </div>
+                            </div>
+                            <div class="architecture-benefit">
+                                <div class="benefit-card">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <h6>Actualización Automática</h6>
+                                    <p>Cuando modifico un componente, se actualiza automáticamente en todas las screens que lo usan, y por ende en todos los demos correspondientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Figma Organization Showcase -->
+                    <div class="story-section">
+                        <h4 class="story-title">📐 Organización Profesional en Figma</h4>
+                        <p class="story-text">
+                            Mi metodología de trabajo en Figma refleja años de experiencia optimizando flujos de diseño. Cada elemento tiene su lugar específico, facilitando la colaboración en equipo y el mantenimiento a largo plazo.
+                        </p>
+                        
+                        <!-- Pages Organization -->
+                        <div class="figma-showcase">
+                            <div class="figma-content">
+                                <div class="figma-text">
+                                    <h5>🗂️ Estructura de Páginas</h5>
+                                    <p>Organización jerárquica clara que permite navegación intuitiva:</p>
+                                    <ul class="figma-features">
+                                        <li>📋 <strong>Cover & Documentation</strong> - Información del proyecto y guías</li>
+                                        <li>🎨 <strong>Design System</strong> - Componentes base y tokens</li>
+                                        <li>📱 <strong>Screens por Módulo</strong> - Agrupadas por funcionalidad</li>
+                                        <li>🎮 <strong>Demos Interactivos</strong> - Prototipos por tipo de usuario</li>
+                                        <li>🔄 <strong>Versioning</strong> - Control de iteraciones y cambios</li>
+                                    </ul>
+                                </div>
+                                <div class="figma-image">
+                                    <img src="assets/organizacion-paginas.png" alt="Organización de páginas en Figma" class="project-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Canvas Organization -->
+                        <div class="figma-showcase reverse">
+                            <div class="figma-content">
+                                <div class="figma-image">
+                                    <img src="assets/organizacion-pantallas.png" alt="Organización de pantallas en canvas" class="project-image">
+                                </div>
+                                <div class="figma-text">
+                                    <h5>🎯 Organización del Canvas</h5>
+                                    <p>Cada pantalla tiene su lugar estratégico en el canvas:</p>
+                                    <ul class="figma-features">
+                                        <li>📐 <strong>Grid System</strong> - Alineación perfecta entre pantallas</li>
+                                        <li>🏷️ <strong>Naming Convention</strong> - Nomenclatura consistente y descriptiva</li>
+                                        <li>🔗 <strong>Flow Connections</strong> - Conexiones visuales entre pantallas</li>
+                                        <li>📱 <strong>Device Frames</strong> - Contexto visual realista</li>
+                                        <li>📝 <strong>Annotations</strong> - Notas y especificaciones técnicas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo Organization -->
+                        <div class="figma-showcase">
+                            <div class="figma-content">
+                                <div class="figma-text">
+                                    <h5>🎮 Estructura de Demos</h5>
+                                    <p>Prototipos organizados para testing y presentación:</p>
+                                    <ul class="figma-features">
+                                        <li>👤 <strong>User Flows Separados</strong> - Demo por tipo de usuario</li>
+                                        <li>🎯 <strong>Starting Points</strong> - Puntos de entrada claros</li>
+                                        <li>🔄 <strong>Interaction Logic</strong> - Flujos lógicos y naturales</li>
+                                        <li>📱 <strong>Responsive Behavior</strong> - Adaptación a diferentes dispositivos</li>
+                                        <li>✨ <strong>Micro-interactions</strong> - Detalles que mejoran la experiencia</li>
+                                    </ul>
+                                </div>
+                                <div class="figma-image">
+                                    <img src="assets/organizacion-demos.png" alt="Organización de demos interactivos" class="project-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo Video -->
+                        <div class="demo-video-section">
+                            <h4 class="story-title">🎬 Demo en Acción</h4>
+                            <div class="video-showcase">
+                                <div class="video-showcase-content">
+                                    <div class="video-container-small">
+                                        <video controls class="demo-video-small">
+                                            <source src="assets/flujo-demo.mov" type="video/mp4">
+                                            Tu navegador no soporta el elemento de video.
+                                        </video>
+                                    </div>
+                                    <div class="video-text">
+                                        <h5>Experiencia Fluida y Natural</h5>
+                                        <p>Este demo interactivo demuestra la calidad y fluidez del prototipo final. Cada transición y micro-interacción fue cuidadosamente diseñada para crear una experiencia natural e intuitiva.</p>
+                                        
+                                        <div class="video-highlights-compact">
+                                            <div class="video-feature-compact">
+                                                <i class="fas fa-bolt"></i>
+                                                <div>
+                                                    <strong>Transiciones Fluidas</strong>
+                                                    <p>Animaciones suaves que guían al usuario</p>
+                                                </div>
+                                            </div>
+                                            <div class="video-feature-compact">
+                                                <i class="fas fa-mobile-alt"></i>
+                                                <div>
+                                                    <strong>Interacciones Realistas</strong>
+                                                    <p>Comportamiento natural de la interfaz</p>
+                                                </div>
+                                            </div>
+                                            <div class="video-feature-compact">
+                                                <i class="fas fa-user-check"></i>
+                                                <div>
+                                                    <strong>Flujo Intuitivo</strong>
+                                                    <p>Navegación clara y sin fricción</p>
+                                                </div>
+                                            </div>
+                                            <div class="video-feature-compact">
+                                                <i class="fas fa-stopwatch"></i>
+                                                <div>
+                                                    <strong>Respuesta Inmediata</strong>
+                                                    <p>Feedback visual instantáneo</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Design Section with Images -->
+                    <div class="story-section">
+                        <h4 class="story-title">🎨 Diseño Visual & Estética</h4>
+                        <div class="visual-showcase">
+                            <div class="visual-content">
+                                <div class="visual-text">
+                                    <h5>Sistema de Temas Dual</h5>
+                                    <p>Desarrollé un sistema completo de <strong>Dark Mode y Light Mode</strong> que se adapta automáticamente a las preferencias del usuario. La paleta de colores fue cuidadosamente seleccionada para garantizar:</p>
+                                    <ul class="visual-features">
+                                        <li>✨ <strong>Accesibilidad visual</strong> con contraste WCAG AA</li>
+                                        <li>🎯 <strong>Consistencia</strong> entre ambos modos</li>
+                                        <li>👁️ <strong>Reducción de fatiga visual</strong> en uso nocturno</li>
+                                        <li>🔄 <strong>Transición suave</strong> entre temas</li>
+                                    </ul>
+                                </div>
+                                <div class="visual-image">
+                                    <img src="assets/busbanz-login-dark-light.png" alt="Busbanz Dark y Light Mode" class="project-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holders/Parents Experience -->
+                    <div class="story-section">
+                        <h4 class="story-title">👨‍👩‍👧‍👦 Experiencia para Representantes</h4>
+                        <div class="visual-showcase reverse">
+                            <div class="visual-content">
+                                <div class="visual-image">
+                                    <img src="assets/route-holder-screens.png" alt="Pantallas para Representantes" class="project-image">
+                                </div>
+                                <div class="visual-text">
+                                    <h5>Tranquilidad y Control Total</h5>
+                                    <p>Diseñé una experiencia que elimina la ansiedad de los padres al brindarles <strong>visibilidad completa</strong> del transporte de sus hijos:</p>
+                                    <ul class="visual-features">
+                                        <li>🗺️ <strong>Tracking en tiempo real</strong> con ubicación precisa</li>
+                                        <li>🔔 <strong>Notificaciones inteligentes</strong> de llegada y salida</li>
+                                        <li>💬 <strong>Chat directo</strong> con conductor y monitor</li>
+                                        <li>👤 <strong>Perfiles completos</strong> del personal de transporte</li>
+                                        <li>📊 <strong>Historial detallado</strong> de viajes y asistencia</li>
+                                        <li>🚨 <strong>Alertas de emergencia</strong> y retrasos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Driver Experience -->
+                    <div class="story-section">
+                        <h4 class="story-title">🚐 Experiencia para Conductores</h4>
+                        <div class="visual-showcase">
+                            <div class="visual-content">
+                                <div class="visual-text">
+                                    <h5>Eficiencia y Automatización</h5>
+                                    <p>Transformé el trabajo diario de los conductores con herramientas que <strong>automatizan y simplifican</strong> sus procesos operativos:</p>
+                                    <ul class="visual-features">
+                                        <li>🛣️ <strong>Rutas optimizadas</strong> con navegación inteligente</li>
+                                        <li>📋 <strong>Listas digitales</strong> de estudiantes por recoger</li>
+                                        <li>✅ <strong>Check-in/Check-out</strong> rápido con códigos QR</li>
+                                        <li>👥 <strong>Info de contacto</strong> de quién recibe a cada estudiante</li>
+                                        <li>🔄 <strong>Gestión multi-ruta</strong> desde una sola app</li>
+                                        <li>📈 <strong>Reportes automáticos</strong> de asistencia y tiempos</li>
+                                    </ul>
+                                </div>
+                                <div class="visual-image">
+                                    <img src="assets/driver-screens.png" alt="Pantallas para Conductores" class="project-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🎨 El Proceso de Diseño</h4>
+                        <div class="design-process">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h6>Design System Completo</h6>
+                                    <p>Creé un sistema de diseño robusto con componentes reutilizables, variables de color, tipografía y espaciado. Incluye versiones dark y light mode.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h6>UI Kit & Documentación</h6>
+                                    <p>Desarrollé un UI Kit completo con documentación detallada de cada componente, pantallas organizadas y agrupadas lógicamente.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h6>Prototipo Interactivo</h6>
+                                    <p>Construí demos completos y totalmente interactivos para diferentes tipos de usuarios, optimizados para dev mode en Figma.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h6>UX Optimizada</h6>
+                                    <p>Textos empáticos y claros, usabilidad excepcional, accesibilidad completa y soporte multiidioma (español/inglés).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🚀 El Impacto</h4>
+                        <div class="impact-metrics">
+                            <div class="metric-card">
+                                <div class="metric-number">95%</div>
+                                <div class="metric-label">Reducción en llamadas de consulta</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number">40min</div>
+                                <div class="metric-label">Tiempo ahorrado por ruta</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-number">100%</div>
+                                <div class="metric-label">Trazabilidad de estudiantes</div>
+                            </div>
+                        </div>
+                        <p class="impact-description">
+                            <strong>Busbanz transformó completamente la experiencia del transporte estudiantil</strong>, 
+                            brindando tranquilidad a los padres y eficiencia operativa a los conductores. 
+                            La plataforma se convirtió en una herramienta indispensable para instituciones educativas 
+                            que buscan ofrecer un servicio de transporte moderno y confiable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Francisco Colmenarez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

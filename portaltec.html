@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortalTec - Francisco Colmenarez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>Francisco Colmenarez</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Sobre mí</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="index.html#projects" class="nav-link dropdown-toggle">
+                        Proyectos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="busbanz.html" class="dropdown-item">
+                            <span class="dropdown-icon">🚌</span>
+                            <span class="dropdown-text">Busbanz</span>
+                        </a>
+                        <a href="portaltec.html" class="dropdown-item active">
+                            <span class="dropdown-icon">🎓</span>
+                            <span class="dropdown-text">PortalTec</span>
+                        </a>
+                        <a href="asesoria-inmigrantes.html" class="dropdown-item">
+                            <span class="dropdown-icon">⚖️</span>
+                            <span class="dropdown-text">Asesoría para Inmigrantes</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#methodologies" class="nav-link">Metodologías</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Volver a Proyectos
+            </a>
+        </div>
+    </section>
+
+    <!-- PortalTec Project Detail -->
+    <section class="project-detail-page">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-featured">
+                <div class="project-header">
+                    <div class="project-title-section">
+                        <h1 class="project-title">🎓 PortalTec</h1>
+                        <p class="project-subtitle">Fábrica de Aplicaciones - Landing Page Responsive</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Web Responsive</span>
+                            <span class="project-tag">UX Research</span>
+                            <span class="project-tag">Landing Page</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-story">
+                    <div class="story-section">
+                        <h4 class="story-title">🎯 El Proyecto</h4>
+                        <p class="story-text">
+                            PortalTec es una fábrica de aplicaciones que se especializa en generar productos propios innovadores. 
+                            Para este proyecto, desarrollé un landing page completamente responsive que demuestra la versatilidad 
+                            y profesionalismo de la empresa, adaptándose perfectamente a cualquier dispositivo.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🔍 El Desafío</h4>
+                        <p class="story-text">
+                            El principal desafío era crear una experiencia visual coherente que funcionara tanto en dispositivos móviles 
+                            como en desktop, manteniendo la jerarquía de información, legibilidad y usabilidad en ambas plataformas. 
+                            La página debía transmitir innovación y confianza técnica.
+                        </p>
+                    </div>
+
+                    <!-- Responsive Showcase -->
+                    <div class="story-section">
+                        <h4 class="story-title">📱💻 Diseño Responsive en Acción</h4>
+                        <p class="story-text">
+                            Una de las características más importantes de este proyecto es su adaptabilidad perfecta. 
+                            Aquí puedes comparar lado a lado cómo se ve la misma página en desktop y móvil, 
+                            demostrando la fluidez del diseño responsive.
+                        </p>
+                        
+                        <div class="responsive-comparison">
+                            <div class="comparison-container">
+                                <!-- Web Version -->
+                                <div class="device-showcase web-showcase">
+                                    <div class="device-header">
+                                        <div class="device-title">
+                                            <i class="fas fa-desktop"></i>
+                                            <span>Versión Desktop</span>
+                                        </div>
+                                        <div class="device-specs">1920x1080</div>
+                                    </div>
+                                    <div class="device-screen">
+                                        <div class="screen-content">
+                                            <img src="assets/portaltec-web.png" alt="PortalTec versión web" class="responsive-image web-image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Version -->
+                                <div class="device-showcase mobile-showcase">
+                                    <div class="device-header">
+                                        <div class="device-title">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span>Versión Mobile</span>
+                                        </div>
+                                        <div class="device-specs">375x812</div>
+                                    </div>
+                                    <div class="device-screen">
+                                        <div class="screen-content">
+                                            <img src="assets/portaltec-mobile.png" alt="PortalTec versión móvil" class="responsive-image mobile-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🎨 Características del Diseño Responsive</h4>
+                        <div class="responsive-features">
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">📐</div>
+                                    <h5>Grid Adaptativo</h5>
+                                    <p>Sistema de grid que se reorganiza inteligentemente según el tamaño de pantalla, manteniendo la jerarquía visual.</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">📱</div>
+                                    <h5>Mobile First</h5>
+                                    <p>Diseñado primero para móvil y luego escalado a desktop, garantizando una experiencia óptima en dispositivos pequeños.</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">⚡</div>
+                                    <h5>Performance</h5>
+                                    <p>Optimizado para carga rápida con imágenes adaptativas y CSS eficiente que mejora la experiencia del usuario.</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🎯</div>
+                                    <h5>UX Consistente</h5>
+                                    <p>Navegación intuitiva y elementos de interfaz que se adaptan naturalmente a cada plataforma.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🛠️ Tecnologías Utilizadas</h4>
+                        <div class="tech-showcase">
+                            <div class="tech-category">
+                                <h5>Frontend</h5>
+                                <div class="tech-list">
+                                    <span class="tech-item">HTML5 Semántico</span>
+                                    <span class="tech-item">CSS3 Grid & Flexbox</span>
+                                    <span class="tech-item">JavaScript ES6+</span>
+                                    <span class="tech-item">Responsive Design</span>
+                                </div>
+                            </div>
+                            <div class="tech-category">
+                                <h5>Metodología</h5>
+                                <div class="tech-list">
+                                    <span class="tech-item">Mobile First</span>
+                                    <span class="tech-item">Progressive Enhancement</span>
+                                    <span class="tech-item">BEM CSS</span>
+                                    <span class="tech-item">Performance Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <h4 class="story-title">🚀 Resultados</h4>
+                        <div class="results-grid">
+                            <div class="result-metric">
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Responsive Compatibility</div>
+                            </div>
+                            <div class="result-metric">
+                                <div class="metric-value">95+</div>
+                                <div class="metric-label">PageSpeed Score</div>
+                            </div>
+                            <div class="result-metric">
+                                <div class="metric-value">AA</div>
+                                <div class="metric-label">WCAG Accessibility</div>
+                            </div>
+                        </div>
+                        <p class="results-description">
+                            El landing page de PortalTec logró una adaptabilidad perfecta entre dispositivos, 
+                            manteniendo la identidad visual y funcionalidad en todas las resoluciones. 
+                            La página se convirtió en una herramienta efectiva para mostrar las capacidades 
+                            técnicas de la empresa y generar confianza en potenciales clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Francisco Colmenarez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
