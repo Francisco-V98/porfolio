@@ -1564,12 +1564,11 @@ section {
 
 /* Project Featured */
 .project-featured {
-    max-width: 1000px;
-    margin: 0 auto;
     background: #f8fafc;
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    padding: 3rem 2rem;
+    box-shadow: none;
+    margin: 0;
 }
 
 /* Methodologies Section */
@@ -2805,6 +2804,25 @@ section {
         gap: 2rem;
     }
     
+    /* Asegurar que la imagen siempre esté arriba en móvil */
+    .visual-showcase .visual-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visual-showcase.reverse .visual-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visual-image {
+        order: 1;
+    }
+    
+    .visual-text {
+        order: 2;
+    }
+    
     .visual-showcase.reverse .visual-image {
         order: 0;
     }
@@ -2838,6 +2856,27 @@ section {
     .figma-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Asegurar que la imagen siempre esté arriba en móvil para Figma */
+    .figma-showcase .figma-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .figma-showcase.reverse .figma-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .figma-image {
+        order: 1;
+    }
+    
+    .figma-text {
+        order: 2;
     }
     
     .figma-showcase.reverse .figma-image {
@@ -3018,6 +3057,12 @@ section {
     
     .philosophy-content p {
         font-size: 1rem;
+    }
+    
+    /* Project featured responsive */
+    .project-featured {
+        padding: 2rem 1rem;
+        border-radius: 0;
     }
     
     /* Documentation responsive */
