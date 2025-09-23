@@ -273,7 +273,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .image-placeholder {
@@ -282,7 +285,7 @@ body {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     border: 3px dashed rgba(255, 255, 255, 0.3);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

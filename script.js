@@ -46,28 +46,29 @@ function handleProfileImage() {
     
     if (!profileImage || !imagePlaceholder) return;
     
-    // Show image and hide placeholder when image loads successfully
+    // Hide placeholder when image loads successfully
     profileImage.addEventListener('load', function() {
-        this.style.display = 'block';
+        console.log('Profile image loaded successfully - hiding placeholder');
         imagePlaceholder.style.display = 'none';
-        console.log('Profile image loaded successfully');
     });
     
-    // Show placeholder and hide image if image fails to load
+    // Show placeholder if image fails to load
     profileImage.addEventListener('error', function() {
-        this.style.display = 'none';
+        console.log('Profile image failed to load - showing placeholder');
         imagePlaceholder.style.display = 'flex';
-        console.log('Profile image failed to load');
     });
     
     // Check if image is already loaded (cached)
     if (profileImage.complete && profileImage.naturalHeight !== 0) {
-        profileImage.style.display = 'block';
+        console.log('Image already loaded from cache - hiding placeholder');
         imagePlaceholder.style.display = 'none';
     } else if (profileImage.complete && profileImage.naturalHeight === 0) {
         // Image failed to load
-        profileImage.style.display = 'none';
+        console.log('Image failed to load (cached) - showing placeholder');
         imagePlaceholder.style.display = 'flex';
+    } else {
+        // Image is still loading
+        console.log('Image is loading...');
     }
 }
 
