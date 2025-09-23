@@ -44,27 +44,30 @@ function handleProfileImage() {
     const profileImage = document.getElementById('profileImage');
     const imagePlaceholder = document.getElementById('imagePlaceholder');
     
-    // Check if profile image exists
+    if (!profileImage || !imagePlaceholder) return;
+    
+    // Show image and hide placeholder when image loads successfully
     profileImage.addEventListener('load', function() {
         this.style.display = 'block';
         imagePlaceholder.style.display = 'none';
         console.log('Profile image loaded successfully');
     });
     
+    // Show placeholder and hide image if image fails to load
     profileImage.addEventListener('error', function() {
         this.style.display = 'none';
         imagePlaceholder.style.display = 'flex';
         console.log('Profile image failed to load');
     });
     
-    // Set the image source - it should load automatically since it's already in the HTML
-    // But we can force a reload if needed
-    if (profileImage.src.includes('profile-photo.jpg')) {
-        // Image source is already set, just trigger load check
-        if (profileImage.complete) {
-            profileImage.style.display = 'block';
-            imagePlaceholder.style.display = 'none';
-        }
+    // Check if image is already loaded (cached)
+    if (profileImage.complete && profileImage.naturalHeight !== 0) {
+        profileImage.style.display = 'block';
+        imagePlaceholder.style.display = 'none';
+    } else if (profileImage.complete && profileImage.naturalHeight === 0) {
+        // Image failed to load
+        profileImage.style.display = 'none';
+        imagePlaceholder.style.display = 'flex';
     }
 }
 
